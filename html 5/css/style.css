@@ -1,0 +1,29 @@
+.grid-container{
+    display: grid;
+    grid-template-columns:150px,auto;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    font-size: xx-large;
+    text-align: center;
+    .{
+    padding: 5%;
+    border: 2px solid black;
+}
+
+}
+#header,#footer{
+    background-color: blueviolet;
+   
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#menu{
+    background-color: rgb(117, 207, 177);
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.post{
+    background-color: rgb(177, 127, 92);
+    height: 150;
+}
